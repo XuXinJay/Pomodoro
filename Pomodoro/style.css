@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Poppins:wght@200;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(221, 33%, 19%);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#time_box {
+    border: 1px solid;
+    border-radius: 30px;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+}
+
+.main_title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.main_time {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2.5rem;
+
+}
+
+#time_border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-content: space-evenly;
+    animation-name: shine;  /* 設定動畫名稱 */
+    animation-duration: 3s;
+    animation-iteration-count: infinite; /* 設置動畫無止盡 */
+    /* border: 1.5px solid; */  
+    /* border-top: 4px solid transparent; */  /* 轉動效果(玩好玩的) */
+    /* animation: animate 4s linear infinite; */  /* 轉動效果(玩好玩的) */
+}
+
+/* 動畫名稱shine執行的動作 */
+@keyframes shine {
+    0%,100%{
+        box-shadow: 0px 0px 60px -12px rgba(246, 180, 0, .5)
+    }
+    50%{
+        box-shadow: 0px 0px 60px 20px rgba(246, 180, 0, .5)
+    }
+}
+
+/* 轉動效果(玩好玩的) */
+/* @keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  */
+
+.main_text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+
+#main_btn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0.5rem;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0.3rem;
+    cursor: pointer;
+    background-color: rgb(255, 174, 23);
+    /* box-shadow: 1px 1.5px 1px rgb(244, 244, 248); */
+    /* font-weight: bolder; */
+}
+
+.btn:hover {
+    transition: 0.4s;
+    /* transform: translateY(-5px); */
+    transform: scale(1.2);
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+  }
