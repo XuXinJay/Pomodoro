@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>番茄鐘</title>
     <script>
         window.onload = function () {
@@ -60,6 +61,7 @@
             // 開始計時器
             function restTimer() {
                 // 設定計時器狀態
+                
                 isWorking = true;
                 timerStatus.innerText = '休息中...'
                 // 啟動計時器
@@ -134,10 +136,10 @@
         <p>回合: <span id="round-num">0</span></p>
     </section>
     <section id="main_btn">
-        <button id="start-btn" class="btn">開始</button>
-        <button id="rest-btn" class="btn">休息</button>
-        <button id="reset-btn" class="btn">重頭開始</button>
-        <button id="light-btn" class="btn" onclick="myFunction()">切換模式</button>
+        <button id="start-btn" class="btn"><i class="uil uil-play"></i></button>
+        <button id="rest-btn" class="btn"><i class="uil uil-coffee"></i></button>
+        <button id="reset-btn" class="btn"><i class="uil uil-history"></i></button>
+        <button id="light-btn" class="btn" onclick="myFunction()"><i class="uil uil-brightness-half"></i></button>
     </section>
 
     <script>
